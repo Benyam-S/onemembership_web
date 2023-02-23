@@ -1,0 +1,369 @@
+.form-component {
+  box-sizing: border-box;
+  margin: 0px auto;
+  max-width: 32rem;
+  width: 100%;
+}
+
+.form-outer {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 227, 221);
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.form-container {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin: 0rem;
+}
+
+.form-input-entry {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem 0rem 0.5rem;
+}
+
+.form-input-label {
+  cursor: text;
+  pointer-events: none;
+  color: rgb(112, 108, 100);
+  position: relative;
+  font-size: 0.875rem !important;
+}
+
+.form-input-container {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.form-input:placeholder-shown {
+  font-style: italic;
+  font-size: 14px !important;
+}
+
+.form-input:hover {
+  border-color: rgb(177, 172, 163);
+}
+
+.form-input:focus {
+  background: rgb(255, 255, 255);
+  border-color: rgb(0, 76, 129);
+  outline: none;
+}
+
+.form-input {
+  resize: none;
+  min-width: 0px;
+  width: 100%;
+  font-weight: normal;
+  appearance: none;
+  background: rgb(245, 244, 242);
+  border: 1px solid rgb(229, 227, 221);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(36, 30, 18);
+  height: 3rem;
+  outline: none;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem !important;
+}
+
+.form-input-invalid:not(:focus) {
+  background-color: rgb(250, 233, 234);
+  border-color: rgb(204, 50, 63);
+}
+
+.form-input-error {
+  align-items: flex-start;
+  place-content: flex-start flex-end;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-pack: end;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.form-input-error > div {
+  align-items: flex-start;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.form-input-error > div > div {
+  margin-bottom: 0.5rem;
+  margin-left: 0px;
+}
+
+.form-input-error > div span {
+  color: rgb(204, 50, 63);
+  font-family: aktiv-grotesk, sans-serif;
+  margin: 0px;
+  position: relative;
+  font-weight: 400 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+.form-button-container {
+  box-sizing: border-box;
+  padding: 0rem;
+  /* margin: 1rem 0rem; */
+}
+
+.form-button {
+  -webkit-box-align: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  display: flex;
+  font-weight: 500;
+  height: unset;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.78125rem 1.5rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  white-space: unset;
+  width: 100%;
+  font-size: 1rem !important;
+}
+
+.form-button-sm {
+  padding: 0.55rem 1.5rem;
+  font-size: 0.875rem !important;
+}
+
+.form-button-loading {
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.form-button-disabled {
+  border: 1px solid rgb(245, 244, 242);
+  cursor: default;
+  background-color: rgb(245, 244, 242);
+  color: rgb(177, 172, 163) !important;
+  pointer-events: none;
+}
+
+.form-button-active {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.light-button-active {
+  background-color: rgb(225, 240, 250);
+  border: 1px rgb(196, 229, 252);
+  color: var(--primary-color) !important;
+}
+
+.light-button-active:hover {
+  background-color: rgb(196, 229, 252);
+  border: 1px rgb(196, 229, 252);
+  color: var(--primary-color) !important;
+}
+
+.light-button-disabled {
+  border: 1px solid rgb(245, 244, 242);
+  cursor: default;
+  background-color: rgb(245, 244, 242);
+  color: rgb(177, 172, 163) !important;
+  pointer-events: none;
+}
+
+.alert svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.alert-danger svg {
+  fill: rgb(204, 50, 63);
+}
+
+.alert-info svg {
+  fill: var(--primary-color) !important;
+}
+
+.button-with-logo-container {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0.5rem 0rem;
+}
+
+.button-with-logo {
+  -webkit-box-align: center;
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: transparent !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgb(177, 172, 163) !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  height: unset;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0.4rem 1.5rem !important;
+  position: relative;
+  pointer-events: unset;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  white-space: unset;
+  width: 100%;
+  color: rgb(36, 30, 18) !important;
+  font-size: 1rem !important;
+}
+
+.button-with-logo-disabled {
+  border: 1px solid rgb(245, 244, 242) !important;
+  cursor: default !important;
+  background-color: rgb(245, 244, 242) !important;
+  color: rgb(177, 172, 163) !important;
+  pointer-events: none !important;
+}
+
+.button-with-logo:focus-visible {
+  outline: none !important;
+  box-shadow: rgb(153 213 255) 0px 0px 0px 3px !important;
+}
+
+.button-with-logo:focus {
+  outline: none !important;
+}
+
+.button-with-logo:active {
+  background-color: rgb(229, 227, 221) !important;
+}
+
+.button-with-logo:hover {
+  background-color: rgb(245, 244, 242) !important;
+}
+
+.button-with-logo div {
+  padding: 0px !important;
+  background: transparent !important;
+}
+
+.button-with-logo-text {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  visibility: visible;
+}
+
+.button-logo {
+  align-self: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: inline-flex;
+  cursor: unset;
+  vertical-align: unset;
+  margin-right: 10px !important;
+}
+
+#button-logo-google {
+  align-self: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: rgb(219, 68, 55);
+}
+
+#button-logo-facebook {
+  align-self: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: rgb(24, 119, 242);
+}
+
+.signup-login {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 1rem 0rem 0rem;
+}
+
+.signup-login > div {
+  color: rgb(36, 30, 18);
+  font-family: aktiv-grotesk, sans-serif;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.signup-login span {
+  color: rgb(36, 30, 18);
+  font-family: aktiv-grotesk, sans-serif;
+  margin: 0px;
+  position: relative;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.signup-login button {
+  border-radius: 4px;
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  text-decoration: underline !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.signup-login button:focus-visible {
+  outline: none;
+  box-shadow: rgb(153 213 255) 0px 0px 0px 3px;
+}
+
+.signup-login button:focus {
+  outline: none;
+}
+
+.signup-login button:hover {
+  text-decoration: underline;
+}

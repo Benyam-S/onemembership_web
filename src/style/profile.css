@@ -1,0 +1,163 @@
+.profile-outer {
+  box-sizing: border-box;
+  margin: 0px auto;
+  max-width: 72rem;
+  width: 100%;
+}
+
+.profile-title {
+  color: rgb(36, 30, 18);
+  font-family: aktiv-grotesk, sans-serif;
+  position: relative;
+  font-weight: 700 !important;
+  font-size: 1.625rem !important;
+  line-height: 1.25 !important;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  margin: 0rem 0rem 2rem;
+}
+
+.profile-segment-1 {
+  align-items: flex-start;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  padding: 3rem 0rem;
+  margin: 0rem -0.5rem;
+}
+
+.profile-segment-title {
+  font-family: aktiv-grotesk, sans-serif;
+  position: relative;
+  padding: 0rem 4rem 1rem 0rem;
+}
+
+.segment-title-header {
+  font-weight: 500 !important;
+  font-size: 1.3125rem !important;
+  line-height: 1.25 !important;
+}
+
+.segment-title-sub {
+  color: rgb(112, 108, 100);
+  font-weight: 400 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  margin: 0.5rem 0rem 0rem;
+}
+
+.entry-segment-title {
+  color: rgb(112, 108, 100);
+  font-family: aktiv-grotesk, sans-serif;
+  margin: 0px;
+  position: relative;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.entry-segment-pic-container {
+  -webkit-box-align: center;
+  align-items: center;
+  place-content: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.entry-segment-pic {
+  display: block;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background-image: url(https://c10.patreonusercontent.com/4/patreon-media/p/user/66334002/18c340d…/eyJ3IjoyMDB9/1.png?token-time=2145916800&token-hash=ti9X09CplfEzQfvs5CvMFhLv1UplmTT9hhv9LVQrFUw%3D);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+}
+
+.profile-segment-connect {
+  box-sizing: border-box;
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  padding: 1.5rem 0rem;
+  border-top: 1px solid rgb(229, 227, 221);
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.profile-connect-button {
+  border-radius: 4px;
+  color: rgb(0, 76, 129);
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  max-width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  font-family: aktiv-grotesk, sans-serif;
+  vertical-align: bottom;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.profile-connect-button:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 48rem) {
+  .profile-segment-title {
+    width: 41.3%;
+    flex-basis: 41.3%;
+  }
+
+  .profile-segment-entry {
+    width: 58.7%;
+    flex-basis: 58.7%;
+  }
+
+  .profile-title {
+    font-size: 2.125rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .profile-outer {
+    padding: 2rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .profile-title {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .MuiTab-root {
+    font-size: 0.9rem !important;
+  }
+
+  .profile-segment-title {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .profile-segment-entry {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}

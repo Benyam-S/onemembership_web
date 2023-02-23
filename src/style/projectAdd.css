@@ -1,0 +1,15 @@
+.slider-enter > .slide {
+  transition-timing-function: ease-in;
+}
+
+@media screen and (min-width: 48rem) {
+  .add-project-outer {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .add-project-outer {
+    max-width: 56%;
+  }
+}
